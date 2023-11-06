@@ -1,4 +1,4 @@
-const CurrencyFormatter = (price: bigint) => {
+const CurrencyFormatter = (price: number) => {
   const formattedPrice = new Intl.NumberFormat("en-us", {
     style: "currency",
     currency: "php",

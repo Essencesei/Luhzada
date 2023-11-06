@@ -46,7 +46,7 @@ const ShoppingCartButton = ({ cart }: ShoppingCartButtonProps) => {
         <div className="card-body">
           <span className="text-lg font-bold">{cart?.size || 0} Items</span>
           <span className="text-info">
-            Subtotal: {CurrencyFormatter(BigInt(Number(cart?.subtotal))) || 0}
+            Subtotal: {CurrencyFormatter(cart?.subtotal || 0)}
           </span>
           <div className="card-actions">
             <Link
